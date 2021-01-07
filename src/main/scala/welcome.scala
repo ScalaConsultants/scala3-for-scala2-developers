@@ -4,15 +4,15 @@ object welcome:
   //
   // Please join and say hello:
   //
-  // CHAT ROOM: https://discord.gg/bc62QxMWqd
+  // CHAT ROOM: scala3-workshop
   //
   // Please git clone and build:
   //
-  // REPOSITORY: https://github.com/jdegoes/scala3-for-scala2-developers
+  // REPOSITORY: https://github.com/ScalaConsultants/scala3-for-scala2-developers
   //
   // Daily Schedule:
   //
-  //    START  : 11:00 AM London Time
-  //    BREAK  :  2:00 PM London Time
-  //    RESUME :  3:00 PM London Time
-  //    END    :  7:00 PM London Time
+  //    START  : 10:00 AM Warsaw Time
+  //    BREAK  :  1:00 PM Warsaw Time
+  //    RESUME :  1:45 PM Warsaw Time
+  //    END    :  6:00 PM Warsaw Time
