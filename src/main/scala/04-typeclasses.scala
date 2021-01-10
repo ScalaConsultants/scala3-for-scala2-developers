@@ -31,7 +31,7 @@ object typeclass_basics:
    * With the help of the `given` keyword, create a **named* instance of the `PrettyPrint` typeclass 
    * for the data type `Int` that renders the integer in a pretty way.
    */
-  // given intPrettyPrint as ...
+  // given namedIntPrettyPrint : ...
 
   /**
    * EXERCISE 3
@@ -54,7 +54,7 @@ object typeclass_basics:
    * `A` for which a `PrettyPrint` instance exists, can both generate a pretty-print string, and 
    * print it out to the console using `println`.
    */
-  def prettyPrintIt = ???
+  def prettyPrintIt : Unit = ???
 
   /**
    * EXERCISE 6
@@ -71,7 +71,7 @@ object typeclass_basics:
    * With the help of both `given` and `using`, create a **named** instance of the `PrettyPrint` 
    * type class for a generic `Vector[A]`, given an instance of `PrettyPrint` for the type `A`.
    */
-  // given vectorPrettyPrint[A] as ...
+  // given vectorPrettyPrint[A] : ...
 
   import scala.CanEqual._ 
 
