@@ -1,7 +1,7 @@
 /**
  * Scala 3 drops a number of features. Most have equivalents you can use instead.
  */
-object dropped:
+object dropped_1:
   trait QuickApp extends DelayedInit:
     var fn: () => Unit = () => ()
 
@@ -42,8 +42,9 @@ object dropped:
    * 
    * Rewrite the do/while loop to an equivalent while loop.
    */
-  var i = 0
-  // do { println("Hello!"); i = i + 1; } while (i < 10)
+  def doWhile() =
+    var i = 0
+    // do { println("Hello!"); i = i + 1; } while (i < 10)
 
   /**
    * EXERCISE 5
@@ -57,15 +58,16 @@ object dropped:
    * 
    * Rewrite the following package object to be just a normal package.
    */
-  // package object ;email { 
-  //   type Email = String
+// package object email { 
+//   type Email = String
 
-  //   def makeEmail(s: String): Email = 
-  //     if (isValidEmail(s)) s else throw new IllegalStateException(s"${s} is not an email")
+//   def makeEmail(s: String): Email = 
+//     if (isValidEmail(s)) s else throw new IllegalStateException(s"${s} is not an email")
 
-  //   def isValidEmail(v: String): Boolean = v.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$")
-  // }
+//   def isValidEmail(v: String): Boolean = v.matches("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$")
+// }
 
+object dropped_2:
   /**
    * EXERCISE 7
    * 
@@ -101,16 +103,17 @@ object dropped:
    * Rewrite the following code to not use XML literals, using XML string
    * interpolation instead.
    */
-  // val html = <html><head></head><body><h1>Hello World</h1></body></html>
+  object xml_literals:
+    // val html = <html><head></head><body><h1>Hello World</h1></body></html>
 
-  extension (sc: StringContext) def xml(args: Any*) = ???
+    extension (sc: StringContext) def xml(args: Any*) = ???
 
   /**
    * EXERCISE 10
    * 
    * Rewrite the following code to not use symbol literals.
    */
-  // Map('int => classOf[Int], 'string => classOf[String])
+  // Map('int -> classOf[Int], 'string -> classOf[String])
 
   /**
    * EXERCISE 11
@@ -157,8 +160,3 @@ object dropped:
   //
   //   def get(): Int = counter
   // }
-
-  
-
-  
-

@@ -128,5 +128,6 @@ package case_classes:
  */  
 object pattern_matching:
   /**
+   * Augmented custom extractors
    */
-  def foo: Int = 2
+  

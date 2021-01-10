@@ -174,6 +174,8 @@ object compiletime:
    * 
    * Using inline match and the type-level function `S[N]`, which returns the successor type of the 
    * singleton type `N`, implement the following function, which "counts" `N`.
+   * 
+   * Hint: the type-level function is defined as `S[N <: Int] <: Int`
    */
   transparent inline def count[N]: Int =
     ??? // inline constValue[N] match

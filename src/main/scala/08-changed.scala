@@ -73,15 +73,6 @@ object wildcard_types:
 object typed_patterns:
   val h :: t = ::("foo", Nil)
 
-  /**
-   * EXERCISE 1
-   * 
-   * Add some more irrefutable patterns to this `for` comprehension.
-   */
-  for
-    (l, r) <- Some((19, 42))
-  yield l + r
-
 /**
  * Scala 3 introduces an open keyword that is designed for extensible classes.
  */
